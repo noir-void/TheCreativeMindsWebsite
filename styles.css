@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 20px;
+  text-align: center;
+}
+h1, h2 {
+  color: #333;
+}
+
+/* Service Animations */
+/* Global Styles */
+.service-item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Web Design Animation: Fade-in with Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.web-design {
+  animation: fadeInScale 1.5s ease-in-out;
+}
+
+/* Graphic Design Hover Effect */
+.hover-effect:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/* Limited Rotation for Video Production */
+@keyframes limitedRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.video-icon {
+  animation: limitedRotate 2s ease-in-out;
+}
+
+
+/* Gallery Section */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.gallery-container img {
+  max-width: 300px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+form label {
+  font-weight: bold;
+}
+form input, form textarea, form button {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+}
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background: #555;
+}
